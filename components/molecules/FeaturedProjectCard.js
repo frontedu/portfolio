@@ -28,7 +28,7 @@ const ContentIcon = () => (
           css={{ width: "24px", height: "24px" }}
         ></Icon>
         <Text preset="body" css={{ padding: 0, marginLeft: "$space100" }}>
-          Conhecer
+          Explorar
         </Text>
       </Flex>
     </Box>

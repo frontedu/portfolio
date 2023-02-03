@@ -19,7 +19,7 @@ export const { styled, getCssString, global, theme } = createCss({
       gray800: "#262626",
       gray900: "#101010",
       gray1000: "#000000",
-      accent: "#F66141",
+      accent: "#5856D6",
     },
     space: {
       space000: "4px",
@@ -74,7 +74,7 @@ export const lightTheme = theme("light-theme", {
     gray800: "#d9d9d9",
     gray900: "#e9e9e9",
     gray1000: "#FFFFFF",
-    accent: "#F66141",
+    accent: "#AF52DE",
   },
   space: {},
   fonts: {},

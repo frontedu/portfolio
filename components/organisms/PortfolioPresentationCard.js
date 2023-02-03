@@ -15,15 +15,14 @@ const PortfolioPresentationCard = () => (
           <Flex direction="column" align="start" justify="between">
             <Flex direction="column" css={{ marginBottom: "$space400" }}>
               <Text preset="largeHeading" css={{ maxWidth: "25ch" }}>
-                Want a deeper dive on how I approached this project?
+               Quer saber mais sobre como abordei esse projeto?
               </Text>
-              <Text preset="body" css={{ color: "$gray400", maxWidth: "35ch" }}>
-                Portfolio presentations are available upon request, drop me a
-                line and I can guide you through how I work.
+              <Text preset="body" css={{ color: "$gray400", maxWidth: "40ch" }}>
+                É só me mandar uma mensagem. Posso te mostrar na prática e com maior nível de detalhes como eu realizei.
               </Text>
             </Flex>
-            <CopyToClipboardButton value="hello@aaronporter.co">
-              hello@aaronporter.co
+            <CopyToClipboardButton value="eduardo@eddu.dev">
+              eduardo@eddu.dev
             </CopyToClipboardButton>
           </Flex>
         </Card.Content>

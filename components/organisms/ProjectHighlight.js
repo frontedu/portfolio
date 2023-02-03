@@ -3,7 +3,7 @@ import Content from "components/atoms/Content";
 import Section from "components/atoms/Section";
 import Text from "components/atoms/Text";
 
-const ProjectHighlight = ({ children, heading, label = "Highlight" }) => (
+const ProjectHighlight = ({ children, heading, label = "Fragmento" }) => (
   <Section>
     <Content>
       <Flex direction="column" css={{ paddingBottom: "$space400" }}>

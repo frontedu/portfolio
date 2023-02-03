@@ -27,9 +27,7 @@ const ConfidentialBanner = ({ css }) => (
         </Box>
         <Box>
           <Text css={{ color: "$gray300", maxWidth: "55ch", padding: 0 }}>
-            Aspects of this project are confidential & can’t be displayed
-            publicly. If you’d like to know more about my process, schedule a
-            portfolio presentation.
+            Este projeto possui aspectos confidenciais. Caso deseje saber mais sobre meu processo, podemos trocar uma ideia.
           </Text>
         </Box>
       </Flex>
@@ -38,7 +36,7 @@ const ConfidentialBanner = ({ css }) => (
         href="#PortfolioPresentation"
         css={{ "@lessThanMedium": { display: "none" } }}
       >
-        Schedule
+        Conversar
       </Button>
     </Flex>
   </Card>

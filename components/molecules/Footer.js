@@ -21,11 +21,10 @@ export const Footer = () => (
           </Button>
         </Box>
         <Box>
-          <Button variant="ghost" href="https://api.whatsapp.com/send/?phone=5534998896336">
-            WhatsApp
+          <Button variant="ghost" href="https://frontedu.medium.com/">
+            Medium
           </Button>
         </Box>
-
         <Flex align="center" justify="end">
           <Button
             variant="ghost"

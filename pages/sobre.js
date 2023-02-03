@@ -12,6 +12,11 @@ import Grid from "components/atoms/Grid";
 import AssetCard from "components/molecules/AssetCard";
 import CopyToClipboardButton from "components/molecules/CopyToClipboardButton";
 
+import foto1 from "../public/images/06.jpg";
+import foto2 from "../public/images/02.jpg";
+import foto3 from "../public/images/01.jpg";
+import foto4 from "../public/images/03.jpg";
+
 const LinkText = styled("span", {
   color: "$accent",
 });
@@ -35,10 +40,13 @@ export default function About() {
               preset="xLargeHeading"
               css={{ maxWidth: "30ch", width: "100%" }}
             >
-              Sou Eduardo Fernandes, um designer que faz a ponte entre o gerenciamento e o código do produto. Tendo produzido para{" "}
+              Sou Eduardo Fernandes, um designer que faz a ponte do
+              gerenciamento até o código do produto. Tendo produzido para{" "}
               <Link href="https://idec.org.br/">IDEC</Link>,{" "}
-              <Link href="https://shoppinguberaba.com.br/">Shopping Uberaba</Link> &{" "}
-              <Link href="https://oneblinc.com/ ">OneBlinc</Link>.
+              <Link href="https://shoppinguberaba.com.br/">
+                Shopping Uberaba
+              </Link>{" "}
+              & <Link href="https://oneblinc.com/ ">OneBlinc</Link>.
               <br />
             </Text>
           </Box>
@@ -46,17 +54,22 @@ export default function About() {
             <Text preset="subHeading">Um pouco sobre mim</Text>
             <Grid columns={2} gapSize="large">
               <Text css={{ color: "$gray300" }}>
-              50% exatas, 50% humanas, 100% thinker. Tenho 20 anos, sou estudante de Análise e Desenvolvimento de Sistemas no Instituto Federal do Triângulo Mineiro.
-              <br />
-              <br />
-              Sou Coordenador de UX/UI (Atuando na coordenação de projetos, research e end-to-end em desenvolvimento web) na Agência Six em Uberaba, Minas Gerais.{" "}
+                50% exatas, 50% humanas, 100% thinker. Tenho 21 anos, sou
+                estudante de Análise e Desenvolvimento de Sistemas no Instituto
+                Federal do Triângulo Mineiro.
+                <br />
+                <br />
+                Sou Coordenador de UX/UI (Atuando na coordenação de projetos, research e desenvolvimento web end-to-end) na Agência Six em Uberaba, Minas Gerais.{" "}
               </Text>
               <Text css={{ color: "$gray300" }}>
-              Além de interfaces, também sou fascinado por estratégia, estatística, inteligência artificial, blockchain e música underground. Na realidade, tudo que é non-sense ou aleatório me apetece.
-              <br />
-              <br />
-              
-              <br />
+                Além de interfaces, também sou fascinado por estratégia, inteligência artificial, blockchain, biologia e música
+                underground.
+                <br />
+                <br />
+                Na realidade, tudo que é de mais nonsense e aleatório nesse mundo me apetece.
+                <br />
+                <br />
+                <br />
               </Text>
             </Grid>
           </Box>
@@ -65,43 +78,29 @@ export default function About() {
               preset="overline"
               css={{ color: "$gray300", paddingBottom: "$space400" }}
             >
-              Tentei fazer legendas legais pra essas fotos 👇
+            Eu sou assim na vida real 👇
             </Text>
             <Flex gap align="start">
               <Flex direction="column" gap>
-              <AssetCard caption="Foto do ensino médio, mas eu carrego até hoje devio a escassez de fotos melhores.">
+                <AssetCard caption="Essa foto é do ensino médio, mas eu carrego até hoje devio a escassez de fotos melhores.">
                   <Image
-                    src="/images/06.jpg"
+                    src={foto1}
                     alt="Foto do Edu olhando pra camera, cheio de efeitos visuais pra deixar ele mais bonito."
                     width={960}
                     height={1280}
+                    placeholder="blur"
+                    eager
                   />
                 </AssetCard>
-                <AssetCard caption="Repare bem no desespero do patinho.">
+              </Flex>
+              <Flex direction="column" gap>
+                <AssetCard caption="Repare bem no desespero desse patinho.">
                   <Image
-                    src="/images/01.jpg"
+                    src={foto3}
                     alt="Nessa foto o Edu tá numa pizzaria sentado, em sua frente tem um drink que é uma banheira alcoolica, com um patinho em cima."
                     width={900}
                     height={1600}
-                  />
-                </AssetCard>
-
-              </Flex>
-              <Flex direction="column" gap>
-                <AssetCard caption="Você também concorda que o milho tinha que ser o troféu de primeiro colocado?">
-                  <Image
-                    src="/images/02.jpg"
-                    alt="Segurando o traféu de segundo colocado no hackaton realizado pela Grão Direto."
-                    width={1104}
-                    height={1396}
-                  />
-                </AssetCard>
-                <AssetCard caption="Acredite se quiser, mas eu namoro.">
-                  <Image
-                    src="/images/03.jpg"
-                    alt="Foto do Edu com a namorada (eu amo ela!)"
-                    width={1158}
-                    height={1544}
+                    placeholder="blur"
                   />
                 </AssetCard>
 
@@ -110,9 +109,7 @@ export default function About() {
           </Section>
           <Section>
             <Box css={{ margin: "0 auto", textAlign: "center" }}>
-              <Text preset="largeHeading">
-                Vamos continuar essa conversa?
-              </Text>
+              <Text preset="largeHeading">Vamos continuar essa conversa?</Text>
               <Box css={{ marginTop: "$space400" }}>
                 <CopyToClipboardButton value="eduardo@eddu.dev">
                   eduardo@eddu.dev
