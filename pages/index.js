@@ -16,12 +16,12 @@ import image4 from "../public/projects/animalsystem/f37.png";
 
 export default function Home() {
   return (
-    <Page description="Eddu desenvolve produtos digitais que potencializam a experência humana. Através de métodos de UX, research, design visual & interação - ele constrói interfaces de software para a interação humana.">
+    <Page description="Eddu desenvolve produtos digitais que potencializam a experiência humana. Através de métodos de UX, research, design visual & interação - ele constrói interfaces de software para a interação humana.">
       <Landing>
         <Content>
           <Box>
             <Text preset="xLargeHeading" css={{ maxWidth: "28ch" }}>
-              Eddu desenvolve produtos digitais que potencializam a experência
+              Eddu desenvolve produtos digitais que potencializam a experiência
               humana.
             </Text>
           </Box>
