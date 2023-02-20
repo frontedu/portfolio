@@ -57,7 +57,7 @@ export default function Home() {
                 title="O Rei do Grão"
                 dates="2022"
                 role="UX/UI Designer"
-                link="/projetos/grain"
+                link="/projetos/grao"
                 image={
                   <Image
                     src="/projects/grain/grain.png"

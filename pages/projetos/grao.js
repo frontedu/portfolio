@@ -86,13 +86,7 @@ export default function Carefull() {
             title="Minha função"
             text={
               <>
-                Meu papel nesse projeto foi tornar realidade, através de uma
-                interface amigável, tudo o que planejamos com capricho: uma
-                plataforma de negociação de grãos que ensina através de
-                informações climáticas e políticas no momento da transação,
-                reduzindo incertezas e chamando atenção para um produto de nosso
-                cliente — o GD VIP, onde esses dados estratégicos são ofertados
-                através de um plano mensal.
+                Meu papel nesse projeto foi tornar realidade, através de uma interface amigável, tudo o que planejamos com capricho: uma plataforma de negociação de grãos que ensina via informações climáticas e políticas no momento da transação, reduzindo incertezas e chamando atenção para um produto de nosso cliente — o GD VIP, onde esses dados estratégicos são ofertados via um plano mensal.
               </>
             }
           />
@@ -108,7 +102,7 @@ export default function Carefull() {
       >
         <Carousel>
           <TextCard
-            text="Desvendamoso as tendências dos eventos corporativos, compreendendo suas dinâmicas e como destacar-se entre os inúmeros estandes."
+            text="Desvendamos as tendências dos eventos corporativos, compreendendo suas dinâmicas e como destacar-se entre os inúmeros estandes."
             iconName="PieChart"
           />
           <TextCard
@@ -128,7 +122,7 @@ export default function Carefull() {
         <Carousel>
           <AssetCard
             columns={1}
-            caption="O roduto tem o nome inspirado pela nova O Rei do Gado, exibida entre 1996 e 1997 na Rede Globo."
+            caption="O produto tem o nome inspirado pela novela O Rei do Gado, exibida entre 1996 e 1997 na Rede Globo."
             image={image2}
             imageAlt="O Rei do Grão"
           />
@@ -173,13 +167,13 @@ export default function Carefull() {
         <Carousel>
           <AssetCard
             columns={2}
-            caption="A negociação ficticia, através de dados estratégicos, ensina o jogador. Desafiando-o a se tornar o rei do grão, escolhendo os melhores momentos na venda de sua saca."
+            caption="A negociação fictícia, através de dados estratégicos, ensina o jogador. Desafiando-o a se tornar o rei do grão, escolhendo os melhores momentos na venda de sua saca."
             imageAlt="Tela de negociação"
             image={image11}
           />
 
           <TextCard
-            text="Construimos um MVP sólido, entregando um produto atrativo, mostrando pontos fortes em relação aos demais concorrentes no hackaton pela proposta de valor."
+            text="Construímos um MVP sólido, entregando um produto atrativo, mostrando pontos fortes em relação aos demais concorrentes no hackaton pela proposta de valor."
             iconName="TreeStructure"
           />
           <TextCard
@@ -189,13 +183,13 @@ export default function Carefull() {
           <AssetCard
             columns={2}
             caption="Ao final, é exibido o ranking em tempo real dos melhores resultados, premiando e incentivando os que mais se destacam."
-            imageAlt="A bunch of interface elements that would appear in an app"
+            imageAlt="Tela de resultado"
             image={image12}
           />
                     <AssetCard
             columns={2}
-            caption="A maior parte de nosso time não possuía outras experiências em hackatons, o que resultou em grandes desafios que foram superados pela colaboração e pró-atividade, sendo o resultado consequência de uma ótima sinergia. 🥈"
-            imageAlt="A bunch of interface elements that would appear in an app"
+            caption="A maior parte de nosso time não possuía outras experiências em hackatons, o que resultou em grandes desafios, superados pela colaboração e pró-atividade, sendo o resultado consequência de uma ótima sinergia. 🥈"
+            imageAlt="Foto do time, contendo 7 pessoas"
             image={image13}
           />
         </Carousel>
