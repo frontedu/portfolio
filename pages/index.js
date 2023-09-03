@@ -10,9 +10,10 @@ import Page from "components/templates/Page";
 import Grid from "components/atoms/Grid";
 import Landing from "components/molecules/Landing";
 
-import image1 from "../public/projects/six/f38.png";
-import image3 from "../public/projects/falteringwaver/grid_0.jpg";
+import image1 from "../public/projects/sults/sults.png";
+import image3 from "../public/projects/falteringwaver/fw.jpg";
 import image4 from "../public/projects/animalsystem/f37.png";
+import image5 from "../public/projects/fidex/fdx.jpg";
 
 export default function Home() {
   return (
@@ -37,11 +38,11 @@ export default function Home() {
           </Text>
           <Grid columns={2}>
             <FeaturedProjectCard
-              title="Agência Six"
-              description="Conceituando marcas através do marketing integrado."
+              title="SULTS"
+              description="Software #1 para franquias e filiais."
               dates="2021-2023"
-              role="Coordenador de UX/UI"
-              link="https://agenciasix.com.br/"
+              role="UX/UI Designer"
+              link="https://sults.com.br"
               image={
                 <Image
                   src={image1}
@@ -53,6 +54,22 @@ export default function Home() {
               }
             />
             <Flex direction="column" jus gap>
+            <FeaturedProjectCard
+                title="Agência Six"
+                dates="2021-2023"
+                role="Coordenador de UX"
+                link="https://agenciasix.com.br/"
+                image={
+                  <Image
+                    src="/projects/six/f39.png"
+                    alt="Logo da Agência Six"
+                    width={67}
+                    height={32}
+                    layout="intrinsic"
+                    priority
+                  />
+                }
+              />
               <FeaturedProjectCard
                 title="O Rei do Grão"
                 dates="2022"
@@ -62,22 +79,6 @@ export default function Home() {
                   <Image
                     src="/projects/grain/grain.png"
                     alt="Logo da Grain Games"
-                    width={48}
-                    height={48}
-                    layout="intrinsic"
-                    priority
-                  />
-                }
-              />
-              <FeaturedProjectCard
-                title="X Æ A-12"
-                dates="2020-2021"
-                role="UX Developer"
-                link="https://meiajuda.vercel.app/"
-                image={
-                  <Image
-                    src="/projects/xae/xae.png"
-                    alt="Logo da X AE A-12"
                     width={48}
                     height={48}
                     layout="intrinsic"
@@ -98,6 +99,14 @@ export default function Home() {
             Projetos paralelos
           </Text>
           <Grid columns={2}>
+          <ProjectCard
+              title="Fidex"
+              description="Projeto de software realizado na disciplina de DAW1 pela IFTM."
+              dates="2023"
+              link="https://fidex.up.railway.app/"
+              imageAlt="Projeto de software realizado na disciplina de DAW1 pela IFTM."
+              image={image5}
+            />
             <ProjectCard
               title="Faltering Waver"
               description="Um mergulho na geração de arte baseado em inteligência artificial."
@@ -108,8 +117,8 @@ export default function Home() {
             />
             <ProjectCard
               title="Animal System"
-              description="Projeto de software sendo realizado na disciplina de extensão pela IFTM."
-              dates="2020-2023"
+              description="Projeto de software realizado na disciplina de extensão pela IFTM."
+              dates="2021-2022"
               link="https://animal-system.vercel.app/"
               imageAlt="Projeto de software realizado na disciplina de extensão pela IFTM."
               image={image4}

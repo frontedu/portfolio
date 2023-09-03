@@ -12,10 +12,8 @@ import Grid from "components/atoms/Grid";
 import AssetCard from "components/molecules/AssetCard";
 import CopyToClipboardButton from "components/molecules/CopyToClipboardButton";
 
-import foto1 from "../public/images/08.png";
-import foto2 from "../public/images/07.png";
-import foto3 from "../public/images/09.png";
-import foto4 from "../public/images/10.png";
+import foto2 from "../public/images/07.jpg";
+import foto3 from "../public/images/09.jpg";
 
 const LinkText = styled("span", {
   color: "$accent",
@@ -59,10 +57,10 @@ export default function About() {
                 Federal do Triângulo Mineiro.
                 <br />
                 <br />
-                Atualmente, ocupo a posição de Coordenador de UX/UI (Atuando na coordenação de projetos, research e desenvolvimento web end-to-end) na Agência Six em Uberaba, Minas Gerais.{" "}
+                Atualmente, ocupo a posição de UX/UI Designer na SULTS em Uberaba, Minas Gerais.{" "}
               </Text>
               <Text css={{ color: "$gray300" }}>
-                Além de interfaces, também sou fascinado por estratégia, inteligência artificial, blockchain, biologia e música
+                Além de experiências encantadoras, também sou fascinado por estratégia, inteligência artificial, blockchain e música
                 underground.
                 <br />
                 <br />
@@ -78,33 +76,11 @@ export default function About() {
               preset="overline"
               css={{ color: "$gray300", paddingBottom: "$space400" }}
             >
-            Galeria de arte gerada por IA
+            Retratos gerados por IA
             </Text>
             <Flex gap align="start">
               <Flex direction="column" gap>
-                <AssetCard caption="Inspirado por Satoshi Kon.">
-                  <Image
-                    src={foto1}
-                    alt="Inspirado por Satoshi Kon."
-                    width={1024}
-                    height={1024}
-                    placeholder="blur"
-                    eager
-                  />
-                </AssetCard>
-
-                <AssetCard caption="Inspirado por Akira Toriyama, Arthur Rackham e Kamome Shirahama.">
-                  <Image
-                    src={foto4}
-                    alt="Inspirado por Akira Toriyama, Arthur Rackham e Kamome Shirahama."
-                    width={1024}
-                    height={1024}
-                    placeholder="blur"
-                  />
-                </AssetCard>
-              </Flex>
-              <Flex direction="column" gap>
-                <AssetCard caption="Inspirado por Katsuhiro Otome e Satoshi Kon.">
+              <AssetCard caption="Inspirado por Katsuhiro Otome e Satoshi Kon.">
                   <Image
                     src={foto2}
                     alt="Inspirado por Katsuhiro Otome e Satoshi Kon."
@@ -114,8 +90,9 @@ export default function About() {
                     eager
                   />
                 </AssetCard>
-
-                <AssetCard caption="Inspirado por Laurie Greasley e Satoshi Kon.">
+              </Flex>
+              <Flex direction="column" gap>
+              <AssetCard caption="Inspirado por Laurie Greasley e Satoshi Kon.">
                   <Image
                     src={foto3}
                     alt="Inspirado por Laurie Greasley e Satoshi Kon."
@@ -124,7 +101,6 @@ export default function About() {
                     placeholder="blur"
                   />
                 </AssetCard>
-
               </Flex>
             </Flex>
           </Section>

@@ -21,8 +21,8 @@ export const Footer = () => (
           </Button>
         </Box>
         <Box>
-          <Button variant="ghost" href="https://frontedu.medium.com/">
-            Medium
+          <Button variant="ghost" href="https://dribbble.com/frontedu">
+            Dribbble
           </Button>
         </Box>
         <Flex align="center" justify="end">
