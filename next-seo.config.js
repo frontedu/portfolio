@@ -1,6 +1,6 @@
 export default {
   titleTemplate: "%s — Eddu",
-  defaultTitle: "Eddu — Product Designer",
+  defaultTitle: "Eddu — UX/UI Designer",
   openGraph: {
     type: "website",
     locale: "pt-BR",
