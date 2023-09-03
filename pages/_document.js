@@ -43,7 +43,6 @@ export default class Document extends NextDocument {
             crossOrigin="anonymous"
           />
 
-          {/* Generics */}
           <link rel="icon" href="/favicons/favicon-16x16.png" sizes="16x16" />
           <link rel="icon" href="/favicons/favicon-32x32.png" sizes="32x32" />
           <link rel="icon" href="/favicons/favicon-96x96.png" sizes="96x96" />
@@ -58,14 +57,12 @@ export default class Document extends NextDocument {
             sizes="192x192"
           />
 
-          {/* Android */}
           <link
             rel="shortcut icon"
             sizes="196x196"
             href="/favicons/favicon-196x196.png"
           />
 
-          {/* iOS */}
           <link
             rel="apple-touch-icon"
             href="/favicons/apple-touch-icon-120x120.png"
@@ -82,7 +79,6 @@ export default class Document extends NextDocument {
             sizes="180x180"
           />
 
-          {/* Windows */}
           <meta name="msapplication-TileColor" content="#FFFFFF" />
           <meta
             name="msapplication-TileImage"
