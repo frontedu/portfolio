@@ -9,7 +9,6 @@ import ProjectCard from "components/molecules/ProjectCard";
 import Page from "components/templates/Page";
 import Grid from "components/atoms/Grid";
 import Landing from "components/molecules/Landing";
-import Script from "next/script";
 import image1 from "../public/projects/sults/sults.png";
 import image3 from "../public/projects/falteringwaver/fw.jpg";
 import image4 from "../public/projects/animalsystem/f37.png";
@@ -18,16 +17,6 @@ import image5 from "../public/projects/fidex/fdx.jpg";
 export default function Home() {
   return (
     <Page description="Eddu desenvolve produtos digitais que potencializam a experiência humana. Através de métodos de UX, research, design visual & interação - ele constrói interfaces de software para a interação humana.">
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-QRYER088WV" />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-QRYER088WV');
-        `}
-      </Script>
       <Landing>
         <Content>
           <Box>
