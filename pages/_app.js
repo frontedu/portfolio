@@ -1,14 +1,12 @@
-import { globalStyles, lightTheme } from "stitches.config";
-import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { globalStyles } from "stitches.config";
+import { AnimatePresence } from "framer-motion";
 import Box from "components/atoms/Box";
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import { ThemeProvider } from "next-themes";
 import Header from "components/molecules/Header";
 import { Footer } from "components/molecules/Footer";
 import { DefaultSeo } from "next-seo";
 import { useRouter } from "next/router";
-import Script from "next/script";
-import * as gtag from "../lib/gtag";
 import SEO from "../next-seo.config";
 
 function MyApp({ Component, pageProps }) {
@@ -23,23 +21,6 @@ function MyApp({ Component, pageProps }) {
   };
 
   const router = useRouter();
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      setTimeout(() => {
-        if (!window) {
-          return;
-        }
-
-        gtag.pageview(url);
-      }, 1000);
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-    router.events.on("hashChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-      router.events.off("hashChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
 
   const spring = {
     duration: 0.3,
@@ -51,7 +32,6 @@ function MyApp({ Component, pageProps }) {
       defaultTheme="dark"
       value={{
         dark: "dark",
-        // light: lightTheme.className,
       }}
     >
       <Box

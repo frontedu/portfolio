@@ -1,6 +1,6 @@
 import React from "react";
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
-import { getCssString, lightTheme } from "../stitches.config";
+import { getCssString } from "../stitches.config";
 
 export default class Document extends NextDocument {
   static async getInitialProps(ctx) {
