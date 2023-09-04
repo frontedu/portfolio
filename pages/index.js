@@ -39,13 +39,13 @@ export default function Home() {
             <FeaturedProjectCard
               title="SULTS"
               description="Software #1 para franquias e filiais."
-              dates="2021-2023"
+              dates="2023"
               role="UX/UI Designer"
               link="https://sults.com.br"
               image={
                 <Image
                   src={image1}
-                  alt="Picture of a mother and son embracing eachother. A purple ring surrounds them showing protection."
+                  alt="Logo da SULTS"
                   layout="responsive"
                   priority
                   placeholder="blur"
@@ -111,7 +111,7 @@ export default function Home() {
               description="Um mergulho na geração de arte baseado em inteligência artificial."
               dates="2022"
               link="https://www.instagram.com/falteringwaver/"
-              imageAlt="Um mergulho na geração de arte baseado em inteligência artificial."
+              imageAlt="Um mergulho na geração de arte baseado em IA."
               image={image3}
             />
             <ProjectCard
