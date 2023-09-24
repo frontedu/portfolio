@@ -102,7 +102,7 @@ export default function Home() {
               title="Fidex"
               description="Projeto de software realizado na disciplina de DAW1 pela IFTM."
               dates="2023"
-              link="https://fidex.up.railway.app/"
+              link="https://github.com/frontedu/fidex"
               imageAlt="Projeto de software realizado na disciplina de DAW1 pela IFTM."
               image={image5}
             />
@@ -118,7 +118,7 @@ export default function Home() {
               title="Animal System"
               description="Projeto de software realizado na disciplina de extensão pela IFTM."
               dates="2021-2022"
-              link="https://animal-system.vercel.app/"
+              link="https://github.com/frontedu/animal-system"
               imageAlt="Projeto de software realizado na disciplina de extensão pela IFTM."
               image={image4}
             />
