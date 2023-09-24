@@ -40,7 +40,7 @@ export default function Home() {
               title="SULTS"
               description="Software #1 para franquias e filiais."
               dates="2023"
-              role="UX/UI Designer"
+              role="UX Lead"
               link="https://sults.com.br"
               image={
                 <Image

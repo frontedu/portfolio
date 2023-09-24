@@ -57,7 +57,7 @@ export default function About() {
                 Federal do Triângulo Mineiro.
                 <br />
                 <br />
-                Atualmente, ocupo a posição de UX/UI Designer na SULTS em Uberaba, Minas Gerais.{" "}
+                Atualmente, ocupo a posição de UX Lead na SULTS em Uberaba, Minas Gerais.{" "}
               </Text>
               <Text css={{ color: "$gray300" }}>
                 Além de experiências encantadoras, também sou fascinado por estratégia, inteligência artificial, blockchain e música
