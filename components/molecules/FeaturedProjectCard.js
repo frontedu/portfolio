@@ -71,7 +71,7 @@ const ProjectCard = ({
               <Text
                 preset="subHeading"
                 css={{
-                  maxWidth: "28ch",
+                  maxWidth: "32ch",
                   color: "$gray300",
                   paddingBottom: "$space400",
                 }}

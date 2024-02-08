@@ -73,7 +73,7 @@ const ProjectCard = ({
               <Text
                 preset="body"
                 css={{
-                  maxWidth: "28ch",
+                  maxWidth: "36ch",
                   color: "$gray300",
                   paddingBottom: "$space400",
                 }}

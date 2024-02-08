@@ -19,7 +19,7 @@ export const { styled, getCssString, global, theme } = createCss({
       gray800: "#262626",
       gray900: "#101010",
       gray1000: "#000000",
-      accent: "#5856D6",
+      accent: "#EB593A",
     },
     space: {
       space000: "4px",

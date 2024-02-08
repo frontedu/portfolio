@@ -38,8 +38,7 @@ export default function About() {
               preset="xLargeHeading"
               css={{ maxWidth: "30ch", width: "100%" }}
             >
-              Sou Eduardo Fernandes, um designer que faz a ponte do
-              gerenciamento até o código do produto. Tendo produzido para{" "}
+              Sou Eduardo Fernandes, um designer que faz a ponte da concepção até o código do produto. Tendo produzido para{" "}
               <Link href="https://idec.org.br/">IDEC</Link>,{" "}
               <Link href="https://shoppinguberaba.com.br/">
                 Shopping Uberaba
@@ -52,19 +51,17 @@ export default function About() {
             <Text preset="subHeading">Um pouco sobre mim</Text>
             <Grid columns={2} gapSize="large">
               <Text css={{ color: "$gray300" }}>
-                50% exatas, 50% humanas, 100% thinker. Tenho 21 anos, sou
-                estudante de Análise e Desenvolvimento de Sistemas no Instituto
+                50% exatas, 50% humanas, 100% soft thinker. Tenho 22 anos, graduado em Análise e Desenvolvimento de Sistemas pelo Instituto
                 Federal do Triângulo Mineiro.
                 <br />
                 <br />
-                Atualmente, ocupo a posição de UX Lead na SULTS em Uberaba, Minas Gerais.{" "}
+                Ocupo a posição de Head de Marketing na SULTS em Uberaba, Minas Gerais.{" "}
               </Text>
               <Text css={{ color: "$gray300" }}>
-                Além de experiências encantadoras, também sou fascinado por estratégia, inteligência artificial, blockchain e música
-                underground.
+                Além de experiências encantadoras, também sou fascinado por estratégia, inteligência artificial e música underground.
                 <br />
                 <br />
-                Na realidade, tudo que é de mais nonsense e aleatório nesse mundo me apetece.
+                Na realidade, tudo que envolva tecnologia no mundo de negócios me fascina.
                 <br />
                 <br />
                 <br />
@@ -80,7 +77,7 @@ export default function About() {
             </Text>
             <Flex gap align="start">
               <Flex direction="column" gap>
-              <AssetCard caption="Inspirado por Katsuhiro Otome e Satoshi Kon.">
+              <AssetCard caption="Capturada durante um encontro da Agência SIX em 2022. A releitura em IA foi inspirada pela arte de Satoshi Kon.">
                   <Image
                     src={foto2}
                     alt="Inspirado por Katsuhiro Otome e Satoshi Kon."
@@ -92,7 +89,7 @@ export default function About() {
                 </AssetCard>
               </Flex>
               <Flex direction="column" gap>
-              <AssetCard caption="Inspirado por Laurie Greasley e Satoshi Kon.">
+              <AssetCard caption="Infância, 2009. A releitura em IA foi inspirada na arte de Laurie Greasley.">
                   <Image
                     src={foto3}
                     alt="Inspirado por Laurie Greasley e Satoshi Kon."

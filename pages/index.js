@@ -13,6 +13,7 @@ import image1 from "../public/projects/sults/sults.png";
 import image3 from "../public/projects/falteringwaver/fw.jpg";
 import image4 from "../public/projects/animalsystem/f37.png";
 import image5 from "../public/projects/fidex/fdx.jpg";
+import image7 from "../public/projects/cooply/logo.jpg";
 
 export default function Home() {
   return (
@@ -38,9 +39,9 @@ export default function Home() {
           <Grid columns={2}>
             <FeaturedProjectCard
               title="SULTS"
-              description="Software #1 para franquias e filiais."
-              dates="2023"
-              role="UX Lead"
+              description="Plataforma N° 1 para gestão de redes de franquias e negócios."
+              dates="2023 - 2024"
+              role="Head de Marketing "
               link="https://sults.com.br"
               image={
                 <Image
@@ -54,8 +55,8 @@ export default function Home() {
             />
             <Flex direction="column" jus gap>
             <FeaturedProjectCard
-                title="Agência Six"
-                dates="2021-2023"
+                title="Agência SIX"
+                dates="2021 - 2023"
                 role="Coordenador de UX"
                 link="https://agenciasix.com.br/"
                 image={
@@ -70,9 +71,9 @@ export default function Home() {
                 }
               />
               <FeaturedProjectCard
-                title="O Rei do Grão"
+                title="Grain Games"
                 dates="2022"
-                role="UX/UI Designer"
+                role="DESIGNER DE PRODUTO"
                 link="/projetos/grao"
                 image={
                   <Image
@@ -98,29 +99,41 @@ export default function Home() {
             Projetos paralelos
           </Text>
           <Grid columns={2}>
+          {/*
+          <ProjectCard
+              title="COOPLY"
+              description="Uma mudança cultural na cadeia de suprimentos para o varejo."
+              dates="2023"
+              link="https://cooply.vercel.app"
+              imageAlt="Projeto de software realizado na disciplina de DAW II pelo IFTM."
+              image={image7}
+            />
+            */}
           <ProjectCard
               title="Fidex"
-              description="Projeto de software realizado na disciplina de DAW1 pela IFTM."
+              description="Uma solução simples e gratuita para recompensar clientes."
               dates="2023"
               link="https://github.com/frontedu/fidex"
-              imageAlt="Projeto de software realizado na disciplina de DAW1 pela IFTM."
+              imageAlt="Projeto de software realizado na disciplina de Aplicações Web pela IFTM."
               image={image5}
             />
-            <ProjectCard
-              title="Faltering Waver"
-              description="Um mergulho na geração de arte baseado em inteligência artificial."
-              dates="2022"
-              link="https://www.instagram.com/falteringwaver/"
-              imageAlt="Um mergulho na geração de arte baseado em IA."
-              image={image3}
-            />
+            {/*
             <ProjectCard
               title="Animal System"
-              description="Projeto de software realizado na disciplina de extensão pela IFTM."
-              dates="2021-2022"
+              description="Uma abordagem moderna em pet shops."
+              dates="2022"
               link="https://github.com/frontedu/animal-system"
-              imageAlt="Projeto de software realizado na disciplina de extensão pela IFTM."
+              imageAlt="Uma abordagem moderna para cuidar de animais de estimação."
               image={image4}
+            />
+            */}
+            <ProjectCard
+              title="Faltering Waver"
+              description="Um estudo de geração de arte baseado em inteligência artificial."
+              dates="2022"
+              link="https://www.instagram.com/falteringwaver/"
+              imageAlt="Um estudo na geração de arte baseado em inteligência artificial."
+              image={image3}
             />
           </Grid>
         </Content>

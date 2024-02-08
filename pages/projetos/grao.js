@@ -23,12 +23,12 @@ import image13 from "../../public/projects/grain/podium.jpg";
 export default function Carefull() {
   return (
     <Page
-      title="O Rei do Grão"
+      title="Grain Games"
       description="A experiência muda o jogo — uma luz para um grande problema em eventos."
     >
       <ProjectIntro
-        client="O Rei do Grão"
-        role="UX/UI Design"
+        client="Grain Games"
+        role="Product Design"
         year="2022"
         title="A experiência muda o jogo — uma luz para um grande problema em eventos."
       >
