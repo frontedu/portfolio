@@ -24,7 +24,7 @@ module.exports = {
   async redirects() {
     return localizedPaths.flatMap((path) =>
       toEnglish.map((condition) => ({
-        source: path,
+        source: path === "/" ? "/pt-BR" : `/pt-BR${path}`,
         destination: path === "/" ? "/en" : `/en${path}`,
         permanent: false,
         locale: false,
