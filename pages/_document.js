@@ -1,33 +1,11 @@
 import React from "react";
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
-import { getCssString } from "../stitches.config";
 
 export default class Document extends NextDocument {
-  static async getInitialProps(ctx) {
-    try {
-      const initialProps = await NextDocument.getInitialProps(ctx);
-
-      return {
-        ...initialProps,
-        styles: (
-          <>
-            {initialProps.styles}
-            <style
-              id="stitches"
-              dangerouslySetInnerHTML={{ __html: getCssString() }}
-            />
-          </>
-        ),
-      };
-    } finally {
-    }
-  }
-
   render() {
     return (
-      <Html lang="pt">
+      <Html>
         <Head>
-          <link rel="stylesheet" href="/fonts/style.css" />
           <link
             rel="preload"
             href="/fonts/Suisse/SuisseIntl-Regular-WebS.woff2"
@@ -48,41 +26,32 @@ export default class Document extends NextDocument {
           <link rel="icon" href="/favicons/favicon-96x96.png" sizes="96x96" />
           <link
             rel="icon"
-            href="/favicons/favicon-128x128.png"
-            sizes="128x128"
-          />
-          <link
-            rel="icon"
-            href="/favicons/favicon-196x196.png"
+            href="/favicons/android-chrome-192x192.png"
             sizes="192x192"
           />
 
-          <link
-            rel="shortcut icon"
-            sizes="196x196"
-            href="/favicons/favicon-196x196.png"
-          />
+          <link rel="shortcut icon" href="/favicons/favicon.ico" />
 
           <link
             rel="apple-touch-icon"
-            href="/favicons/apple-touch-icon-120x120.png"
+            href="/favicons/apple-icon-120x120.png"
             sizes="120x120"
           />
           <link
             rel="apple-touch-icon"
-            href="/favicons/apple-touch-icon-152x152.png"
+            href="/favicons/apple-icon-152x152.png"
             sizes="152x152"
           />
           <link
             rel="apple-touch-icon"
-            href="/favicons/apple-touch-icon-180x180.png"
+            href="/favicons/apple-icon-180x180.png"
             sizes="180x180"
           />
 
           <meta name="msapplication-TileColor" content="#FFFFFF" />
           <meta
             name="msapplication-TileImage"
-            content="/favicons/mstile-144x144.png"
+            content="/favicons/ms-icon-144x144.png"
           />
         </Head>
         <body>

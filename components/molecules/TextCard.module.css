@@ -1,0 +1,18 @@
+.iconWrapper {
+  padding: var(--space200);
+  background-color: var(--gray800);
+  border-radius: 100%;
+  color: var(--gray000);
+  margin-bottom: var(--space400);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.text {
+  max-width: 35ch;
+  color: var(--gray000);
+  padding-bottom: 0;
+}

@@ -1,4 +1,4 @@
-export default {
+const SEO = {
   titleTemplate: "%s — Eddu",
   defaultTitle: "Eddu — Eduardo Fernandes",
   openGraph: {
@@ -8,3 +8,5 @@ export default {
     site_name: "Eddu",
   },
 };
+
+export default SEO;

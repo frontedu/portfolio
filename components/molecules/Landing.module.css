@@ -1,0 +1,10 @@
+.landing {
+  padding-bottom: 0;
+  padding-top: var(--space700);
+}
+
+@media (min-width: 1024px) {
+  .landing {
+    padding-top: var(--space800);
+  }
+}

@@ -1,0 +1,28 @@
+.banner {
+  padding: var(--space400);
+}
+
+.iconWrapper {
+  padding: var(--space200);
+  background-color: var(--gray800);
+  border-radius: 100%;
+  color: var(--gray000);
+  display: inline-flex;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.text {
+  color: var(--gray300);
+  max-width: 55ch;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .button {
+    display: none;
+  }
+}

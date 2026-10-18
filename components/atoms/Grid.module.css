@@ -1,0 +1,37 @@
+@layer atoms {
+  .grid {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: grid;
+  }
+
+  .columns1,
+  .columns2 {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .columns2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .gapDefault {
+    gap: var(--space300);
+  }
+
+  .gapLarge {
+    gap: var(--space500);
+  }
+
+  @media (min-width: 1024px) {
+    .gapDefault {
+      gap: var(--space400);
+    }
+
+    .gapLarge {
+      gap: var(--space600);
+    }
+  }
+}

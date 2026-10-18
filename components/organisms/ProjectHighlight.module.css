@@ -1,0 +1,12 @@
+.header {
+  padding-bottom: var(--space400);
+}
+
+.label {
+  color: var(--accent);
+}
+
+.heading {
+  max-width: 35ch;
+  padding-bottom: var(--space200);
+}

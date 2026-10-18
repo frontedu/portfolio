@@ -1,0 +1,48 @@
+.card {
+  min-height: 240px;
+}
+
+.contentIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.iconWrapper {
+  padding: var(--space200);
+  background-color: var(--gray800);
+  border-radius: 9999px;
+  color: var(--gray000);
+  flex-direction: row;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.iconLabel {
+  padding: 0;
+  margin-left: var(--space100);
+}
+
+.image {
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.info {
+  flex-grow: 0;
+}
+
+.description {
+  max-width: 32ch;
+  color: var(--gray300);
+  padding-bottom: var(--space400);
+}
+
+.meta {
+  color: var(--gray300);
+}

@@ -1,11 +1,8 @@
-import { styled } from "stitches.config";
+import cx from "components/utilities/cx";
+import styles from "./Section.module.css";
 
-const Section = styled("section", {
-  padding: "$space500 0",
-
-  "@medium": {
-    padding: "$space800 0",
-  },
-});
+const Section = ({ className, ...props }) => (
+  <section className={cx(styles.section, className)} {...props} />
+);
 
 export default Section;

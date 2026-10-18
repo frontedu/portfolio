@@ -1,10 +1,9 @@
-import { styled } from "stitches.config";
 import { motion } from "framer-motion";
+import cx from "components/utilities/cx";
+import styles from "./Box.module.css";
 
-const Box = styled(motion.div, {
-  // Reset
-  boxSizing: "border-box",
-  position: "relative",
-});
+const Box = ({ className, ...props }) => (
+  <motion.div className={cx(styles.box, className)} {...props} />
+);
 
 export default Box;

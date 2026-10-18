@@ -1,0 +1,34 @@
+.linkText {
+  color: var(--accent);
+}
+
+.intro {
+  margin-bottom: var(--space500);
+}
+
+.title {
+  max-width: 30ch;
+  width: 100%;
+}
+
+.paragraph {
+  color: var(--gray300);
+}
+
+.overline {
+  color: var(--gray300);
+  padding-bottom: var(--space400);
+}
+
+.subsection {
+  margin-top: var(--space700);
+}
+
+.contact {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contactButton {
+  margin-top: var(--space400);
+}

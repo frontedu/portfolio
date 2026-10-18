@@ -4,10 +4,18 @@ import Flex from "components/atoms/Flex";
 import Text from "components/atoms/Text";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import useContent from "components/utilities/useContent";
+import styles from "./CopyToClipboardButton.module.css";
+
+const content = {
+  "pt-BR": { copied: "E-mail copiado!" },
+  en: { copied: "Email copied!" },
+};
 
 const CopyToClipboardButton = (props) => {
   const { value, children } = props;
   const [tooltipVisible, setTooltipVisible] = useState(false);
+  const t = useContent(content);
 
   const copy = () => {
     setTooltipVisible(true);
@@ -22,32 +30,19 @@ const CopyToClipboardButton = (props) => {
   };
 
   return (
-    <Box css={{ display: "inline-block" }}>
+    <Box className={styles.wrapper}>
       <AnimatePresence>
         {tooltipVisible && (
           <Flex
-            css={{
-              position: "absolute",
-              display: "inline-flex",
-              top: -8,
-              left: 0,
-              right: 0,
-            }}
+            className={styles.tooltip}
             justify="center"
             initial="hidden"
             animate={"visible"}
             exit="exit"
             variants={variants}
           >
-            <Box
-              css={{
-                backgroundColor: "$gray700",
-                borderRadius: "99999px",
-                display: "inline-block",
-                padding: "$space100 $space200",
-              }}
-            >
-              <Text>E-mail copiado!</Text>
+            <Box className={styles.bubble}>
+              <Text>{t.copied}</Text>
             </Box>
           </Flex>
         )}

@@ -4,8 +4,9 @@ import Text from "components/atoms/Text";
 import Card from "components/atoms/Card";
 import Icon from "components/atoms/Icon";
 import { useState } from "react";
-import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { LayoutGroup } from "framer-motion";
 import Image from "next/image";
+import styles from "./AssetCard.module.css";
 
 const Caption = ({ open, text }) => {
   const parentVariants = {
@@ -52,24 +53,13 @@ const Caption = ({ open, text }) => {
   };
 
   return (
-    <AnimateSharedLayout>
+    <LayoutGroup>
       <Box
         layout
         variants={parentVariants}
         initial="closed"
         animate={open ? "open" : "closed"}
-        css={{
-          backgroundColor: "$gray500",
-          padding: "$space100",
-          backgroundColor: "$gray800",
-          position: "absolute",
-          bottom: "40px",
-          right: "40px",
-          color: "$gray000",
-          maxWidth: "35ch",
-          display: "block",
-          overflow: "hidden",
-        }}
+        className={styles.caption}
       >
         {!open && (
           <Box
@@ -80,7 +70,7 @@ const Caption = ({ open, text }) => {
             animate="closed"
             exit="open"
           >
-            <Icon name="Info" css={{ height: "16px", width: "16px" }} />
+            <Icon name="Info" className={styles.icon} />
           </Box>
         )}
         {open && (
@@ -91,13 +81,13 @@ const Caption = ({ open, text }) => {
             initial="closed"
             animate="open"
             exit="closed"
-            css={{ padding: "$space100" }}
+            className={styles.captionText}
           >
             <Text>{text}</Text>
           </Box>
         )}
       </Box>
-    </AnimateSharedLayout>
+    </LayoutGroup>
   );
 };
 
@@ -110,14 +100,22 @@ const AssetCard = ({ columns = 2, children, caption, image, imageAlt }) => {
 
   return (
     <Flex
-      css={{ gridColumn: `span ${columns}`, position: "relative" }}
+      className={styles.wrapper}
+      style={{ gridColumn: `span ${columns}` }}
       onHoverStart={() => setHover(true)}
       onHoverEnd={() => setHover(false)}
       onClick={() => toggleCaption()}
     >
       <Card pressable={false}>
         <Flex align="center" justify="center">
-          {image && <Image src={image} alt={imageAlt} placeholder="blur" />}
+          {image && (
+            <Image
+              src={image}
+              alt={imageAlt}
+              placeholder="blur"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+          )}
           {children}
         </Flex>
       </Card>

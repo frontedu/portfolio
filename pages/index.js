@@ -11,61 +11,117 @@ import Grid from "components/atoms/Grid";
 import Landing from "components/molecules/Landing";
 import image1 from "../public/projects/sults/sults.png";
 import image3 from "../public/projects/falteringwaver/fw.jpg";
-import image4 from "../public/projects/animalsystem/f37.png";
-import image5 from "../public/projects/fidex/fdx.jpg";
-import image7 from "../public/projects/cooply/logo.jpg";
+import image5 from "../public/projects/liquidcomposer/lc.png";
+import useContent from "components/utilities/useContent";
+import styles from "styles/Home.module.css";
+
+const content = {
+  "pt-BR": {
+    description:
+      "Eddu desenvolve produtos digitais que potencializam a experiência humana. Através de métodos de UX, research, design visual & interação - ele constrói interfaces de software para a interação humana.",
+    title:
+      "Eddu desenvolve produtos digitais que potencializam a experiência humana.",
+    featured: "Principais projetos",
+    side: "Projetos paralelos",
+    sults: {
+      description:
+        "Plataforma N° 1 para gestão de redes de franquias e negócios.",
+      dates: "2023 - atual",
+      role: "Head de Desenvolvimento",
+      alt: "Logo da SULTS",
+    },
+    six: { role: "Coordenador de UX", alt: "Logo da Agência Six" },
+    grain: { role: "DESIGNER DE PRODUTO", alt: "Logo da Grain Games" },
+    liquidComposer: {
+      description:
+        "Uma recriação web do Icon Composer da Apple para criar ícones em Liquid Glass.",
+      alt: "Ícone do Liquid Composer em Liquid Glass.",
+    },
+    falteringWaver: {
+      description:
+        "Um estudo de geração de arte baseado em inteligência artificial.",
+      alt: "Um estudo na geração de arte baseado em inteligência artificial.",
+    },
+  },
+  en: {
+    description:
+      "Eddu builds digital products that elevate the human experience. Through UX methods, research, visual & interaction design, he crafts software interfaces for people.",
+    title: "Eddu builds digital products that elevate the human experience.",
+    featured: "Featured work",
+    side: "Side projects",
+    sults: {
+      description:
+        "The #1 platform for managing franchise networks and businesses.",
+      dates: "2023 - present",
+      role: "Head of Development",
+      alt: "SULTS logo",
+    },
+    six: { role: "UX Coordinator", alt: "Agência Six logo" },
+    grain: { role: "Product Designer", alt: "Grain Games logo" },
+    liquidComposer: {
+      description:
+        "A web recreation of Apple's Icon Composer for designing Liquid Glass icons.",
+      alt: "Liquid Composer icon in Liquid Glass.",
+    },
+    falteringWaver: {
+      description: "A study in AI-driven art generation.",
+      alt: "A study in AI-driven art generation.",
+    },
+  },
+};
 
 export default function Home() {
+  const t = useContent(content);
+
   return (
-    <Page description="Eddu desenvolve produtos digitais que potencializam a experiência humana. Através de métodos de UX, research, design visual & interação - ele constrói interfaces de software para a interação humana.">
+    <Page description={t.description}>
       <Landing>
         <Content>
           <Box>
-            <Text preset="xLargeHeading" css={{ maxWidth: "28ch" }}>
-              Eddu desenvolve produtos digitais que potencializam a experiência
-              humana.
+            <Text preset="xLargeHeading" className={styles.title}>
+              {t.title}
             </Text>
           </Box>
         </Content>
       </Landing>
-      <Section css={{ paddingTop: "$space400" }}>
+      <Section className={styles.projects}>
         <Content>
-          <Text
-            preset="overline"
-            css={{ color: "$gray300", marginBottom: "$space300" }}
-          >
-            Principais projetos
+          <Text preset="overline" className={styles.overline}>
+            {t.featured}
           </Text>
           <Grid columns={2}>
             <FeaturedProjectCard
               title="SULTS"
-              description="Plataforma N° 1 para gestão de redes de franquias e negócios."
-              dates="2023 - 2024"
-              role="Head de Marketing "
+              description={t.sults.description}
+              dates={t.sults.dates}
+              role={t.sults.role}
               link="https://sults.com.br"
+              openLinkInNewTab
               image={
                 <Image
                   src={image1}
-                  alt="Logo da SULTS"
-                  layout="responsive"
+                  alt={t.sults.alt}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "auto" }}
                   priority
                   placeholder="blur"
                 />
               }
             />
-            <Flex direction="column" jus gap>
-            <FeaturedProjectCard
+            <Flex direction="column" gap>
+              <FeaturedProjectCard
                 title="Agência SIX"
                 dates="2021 - 2023"
-                role="Coordenador de UX"
+                role={t.six.role}
                 link="https://agenciasix.com.br/"
+                openLinkInNewTab
                 image={
                   <Image
                     src="/projects/six/f39.png"
-                    alt="Logo da Agência Six"
+                    alt={t.six.alt}
                     width={67}
                     height={32}
-                    layout="intrinsic"
+                    style={{ maxWidth: "100%", height: "auto" }}
                     priority
                   />
                 }
@@ -73,15 +129,15 @@ export default function Home() {
               <FeaturedProjectCard
                 title="Grain Games"
                 dates="2022"
-                role="DESIGNER DE PRODUTO"
+                role={t.grain.role}
                 link="/projetos/grao"
                 image={
                   <Image
                     src="/projects/grain/grain.png"
-                    alt="Logo da Grain Games"
+                    alt={t.grain.alt}
                     width={48}
                     height={48}
-                    layout="intrinsic"
+                    style={{ maxWidth: "100%", height: "auto" }}
                     priority
                   />
                 }
@@ -92,47 +148,24 @@ export default function Home() {
       </Section>
       <Section>
         <Content>
-          <Text
-            preset="overline"
-            css={{ color: "$gray300", marginBottom: "$space300" }}
-          >
-            Projetos paralelos
+          <Text preset="overline" className={styles.overline}>
+            {t.side}
           </Text>
           <Grid columns={2}>
-          {/*
-          <ProjectCard
-              title="COOPLY"
-              description="Uma mudança cultural na cadeia de suprimentos para o varejo."
-              dates="2023"
-              link="https://cooply.vercel.app"
-              imageAlt="Projeto de software realizado na disciplina de DAW II pelo IFTM."
-              image={image7}
-            />
-            */}
-          <ProjectCard
-              title="Fidex"
-              description="Uma solução simples e gratuita para recompensar clientes."
-              dates="2023"
-              link="https://github.com/frontedu/fidex"
-              imageAlt="Projeto de software realizado na disciplina de Aplicações Web pela IFTM."
+            <ProjectCard
+              title="Liquid Composer"
+              description={t.liquidComposer.description}
+              dates="2026"
+              link="https://liquid-composer.vercel.app"
+              imageAlt={t.liquidComposer.alt}
               image={image5}
             />
-            {/*
-            <ProjectCard
-              title="Animal System"
-              description="Uma abordagem moderna em pet shops."
-              dates="2022"
-              link="https://github.com/frontedu/animal-system"
-              imageAlt="Uma abordagem moderna para cuidar de animais de estimação."
-              image={image4}
-            />
-            */}
             <ProjectCard
               title="Faltering Waver"
-              description="Um estudo de geração de arte baseado em inteligência artificial."
+              description={t.falteringWaver.description}
               dates="2022"
               link="https://www.instagram.com/falteringwaver/"
-              imageAlt="Um estudo na geração de arte baseado em inteligência artificial."
+              imageAlt={t.falteringWaver.alt}
               image={image3}
             />
           </Grid>

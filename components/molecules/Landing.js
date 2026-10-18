@@ -1,12 +1,9 @@
-import { styled } from "../../stitches.config";
 import Section from "components/atoms/Section";
+import cx from "components/utilities/cx";
+import styles from "./Landing.module.css";
 
-const Landing = styled(Section, {
-  paddingBottom: 0,
-  paddingTop: "$space700",
-  "@large": {
-    paddingTop: "$space800",
-  },
-});
+const Landing = ({ className, ...props }) => (
+  <Section className={cx(styles.landing, className)} {...props} />
+);
 
 export default Landing;

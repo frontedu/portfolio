@@ -1,0 +1,4 @@
+.text {
+  color: var(--gray300);
+  max-width: 45ch;
+}

@@ -1,0 +1,31 @@
+@layer atoms {
+  .card {
+    background-color: var(--gray900);
+    border-radius: var(--space100);
+    position: relative;
+    overflow: hidden;
+    clip-path: border-box;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+
+  .card * {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+
+  .pressable {
+    cursor: pointer;
+  }
+
+  .content {
+    position: relative;
+    padding: var(--space400);
+  }
+
+  @media (min-width: 1024px) {
+    .content {
+      padding: var(--space600);
+    }
+  }
+}

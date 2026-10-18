@@ -1,0 +1,12 @@
+.footer {
+  padding: var(--space700) 0 var(--space900);
+}
+
+.locales {
+  display: inline-flex;
+  align-items: center;
+}
+
+.locales > * + * {
+  margin-left: var(--space000);
+}

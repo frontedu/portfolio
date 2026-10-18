@@ -1,0 +1,118 @@
+@layer atoms {
+  .text {
+    display: inline-block;
+    margin: 0;
+    color: var(--gray000);
+    line-height: calc(1em + 4px);
+    position: relative;
+  }
+
+  .xLargeHeading {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: var(--space300);
+    padding-top: var(--space200);
+  }
+
+  @media (min-width: 768px) {
+    .xLargeHeading {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .xLargeHeading {
+      font-size: 52px;
+      line-height: 60px;
+      padding-bottom: var(--space500);
+      padding-top: var(--space300);
+    }
+  }
+
+  .largeHeading {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: var(--space000);
+    padding-top: var(--space000);
+  }
+
+  @media (min-width: 1024px) {
+    .largeHeading {
+      font-size: 36px;
+      line-height: 44px;
+      padding-top: var(--space100);
+    }
+  }
+
+  .heading {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: var(--space100);
+    padding-bottom: var(--space100);
+  }
+
+  @media (min-width: 1024px) {
+    .heading {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+
+  .subHeading {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    padding-bottom: var(--space100);
+    padding-top: var(--space000);
+  }
+
+  @media (min-width: 1024px) {
+    .subHeading {
+      font-size: 20px;
+      line-height: 28px;
+      padding-bottom: var(--space100);
+    }
+  }
+
+  .body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+  }
+
+  @media (min-width: 1024px) {
+    .body {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.015em;
+    }
+  }
+
+  .bodySmall {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .overline {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: var(--font-suisse-mono);
+    letter-spacing: 0.075em;
+    padding-bottom: var(--space000);
+  }
+
+  @media (min-width: 1024px) {
+    .overline {
+      font-size: 14px;
+      padding-bottom: var(--space100);
+    }
+  }
+}

@@ -5,26 +5,20 @@ import Box from "components/atoms/Box";
 import Text from "components/atoms/Text";
 import LinkTo from "components/utilities/LinkTo";
 import Flex from "components/atoms/Flex";
+import cx from "components/utilities/cx";
+import styles from "./ProjectCard.module.css";
 
 const ContentIcon = () => (
-  <Card.Content css={{ position: "absolute", top: 0, right: 0, zIndex: 100 }}>
+  <Card.Content className={styles.contentIcon}>
     <Box>
       <Box
-        css={{
-          padding: "$space200",
-          backgroundColor: "$gray800",
-          borderRadius: "100%",
-          color: "$gray000",
-        }}
+        className={styles.iconWrapper}
         variants={{
           default: { opacity: 0, scale: 0.2 },
           hover: { opacity: 1, scale: 1 },
         }}
       >
-        <Icon
-          name="ArrowRightUp"
-          css={{ width: "24px", height: "24px" }}
-        ></Icon>
+        <Icon name="ArrowRightUp" className={styles.icon}></Icon>
       </Box>
     </Box>
   </Card.Content>
@@ -40,24 +34,25 @@ const ProjectCard = ({
   link,
   layoutId,
   fullWidthImage = true,
-  css,
+  className,
   openLinkInNewTab = true,
 }) => (
   <Card
     direction="column"
     layoutId={layoutId}
-    css={{ minHeight: "240px", ...css }}
+    className={cx(styles.card, className)}
     pressable
   >
     <LinkTo href={link} displayContents newTab={openLinkInNewTab}>
       <ContentIcon />
       {fullWidthImage && (
-        <Box css={{ height: "200px", width: "100%", position: "relative" }}>
+        <Box className={styles.image}>
           <Image
             src={image}
             alt={imageAlt}
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
+            style={{ objectFit: "cover" }}
             placeholder="blur"
           />
         </Box>
@@ -65,27 +60,17 @@ const ProjectCard = ({
       <Card.Content>
         <Flex direction="column" justify="between">
           {!fullWidthImage && <Box>{image}</Box>}
-          <Box css={{ flexGrow: 0 }}>
+          <Box className={styles.info}>
             <Box>
               <Text preset="heading">{title}</Text>
             </Box>
             {description && (
-              <Text
-                preset="body"
-                css={{
-                  maxWidth: "36ch",
-                  color: "$gray300",
-                  paddingBottom: "$space400",
-                }}
-              >
+              <Text preset="body" className={styles.description}>
                 {description}
               </Text>
             )}
             <Box>
-              <Text
-                preset="overline"
-                css={{ color: "$gray300", paddingBottom: 0 }}
-              >
+              <Text preset="overline" className={styles.meta}>
                 {dates} {role && `· ${role}`}
               </Text>
             </Box>

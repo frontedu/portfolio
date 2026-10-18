@@ -3,6 +3,7 @@ import React from "react";
 import Text from "components/atoms/Text";
 import Content from "components/atoms/Content";
 import Flex from "components/atoms/Flex";
+import styles from "./List.module.css";
 
 const List = ({ children }) => (
   <Content>
@@ -12,11 +13,13 @@ const List = ({ children }) => (
   </Content>
 );
 
-List.Item = ({ title, text }) => (
+const ListItem = ({ title, text }) => (
   <Flex direction="column">
     <Text preset="heading">{title}</Text>
-    <Text css={{ color: "$gray300", maxWidth: "45ch" }}>{text}</Text>
+    <Text className={styles.text}>{text}</Text>
   </Flex>
 );
+
+List.Item = ListItem;
 
 export default List;

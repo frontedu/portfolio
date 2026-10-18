@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Suisse";
+  font-display: "optional";
+  font-style: "normal";
+  font-weight: 400;
+  src: url("/fonts/Suisse/SuisseIntl-Regular-WebS.woff") format("woff"),
+      url("/fonts/Suisse/SuisseIntl-Regular-WebS.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Suisse Mono";
+  font-display: "optional";
+  font-style: "normal";
+  font-weight: 400;
+  src: url("/fonts/SuisseMono/SuisseIntlMono-Regular-WebS.woff") format("woff"),
+        url("/fonts/SuisseMono/SuisseIntlMono-Regular-WebS.woff2") format("woff2");
+}
+
+:root {
+  --font-suisse-mono: "Suisse Mono";
+
+  --gray000: #ffffff;
+  --gray100: #e9e9e9;
+  --gray200: #d9d9d9;
+  --gray300: #c4c4c4;
+  --gray400: #9d9d9d;
+  --gray500: #7b7b7b;
+  --gray600: #555555;
+  --gray700: #434343;
+  --gray800: #262626;
+  --gray900: #101010;
+  --gray1000: #000000;
+  --accent: #1f7972;
+
+  --space000: 4px;
+  --space100: 8px;
+  --space200: 12px;
+  --space300: 16px;
+  --space400: 24px;
+  --space500: 32px;
+  --space600: 40px;
+  --space700: 64px;
+  --space800: 128px;
+  --space900: 192px;
+
+  --transition-default: all 0.3s ease-out;
+}
+
+html {
+  color-scheme: dark;
+  font-family: "Suisse", -apple-system;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow: auto;
+  background-color: var(--gray1000);
+  margin: 0;
+}

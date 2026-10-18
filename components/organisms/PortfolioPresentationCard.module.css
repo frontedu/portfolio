@@ -1,0 +1,24 @@
+.header {
+  margin-bottom: var(--space400);
+}
+
+.title {
+  max-width: 25ch;
+}
+
+.description {
+  color: var(--gray400);
+  max-width: 40ch;
+}
+
+.browser {
+  width: 50%;
+  padding: var(--space500) 0;
+  transform: translateX(25%);
+}
+
+@media (max-width: 768px) {
+  .browser {
+    display: none;
+  }
+}

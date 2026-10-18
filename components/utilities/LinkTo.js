@@ -22,20 +22,16 @@ const LinkTo = ({
     <Link
       {...{ href, as, replace, scroll, shallow, prefetch, locale }}
       scroll={false}
+      style={{
+        color: "inherit",
+        textDecoration: "none",
+        display: displayContents ? "contents" : "block",
+        cursor: "pointer",
+      }}
+      target={newTab ? "_blank" : ""}
+      {...anchorProps}
     >
-      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-      <a
-        style={{
-          color: "inherit",
-          textDecoration: "none",
-          display: displayContents ? "contents" : "block",
-          cursor: "pointer",
-        }}
-        target={newTab ? "_blank" : ""}
-        {...anchorProps}
-      >
-        {children}
-      </a>
+      {children}
     </Link>
   );
 };

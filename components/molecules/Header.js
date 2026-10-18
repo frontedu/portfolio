@@ -1,21 +1,11 @@
 import Box from "components/atoms/Box";
 import Content from "components/atoms/Content";
 import Flex from "components/atoms/Flex";
-import Image from "next/image";
 import Menu from "components/organisms/Menu";
+import styles from "./Header.module.css";
 
 const Header = () => (
-  <Box
-    css={{
-      position: "fixed",
-      right: 0,
-      left: 0,
-      bottom: "$space600",
-      margin: "auto",
-      zIndex: 1000,
-      pointerEvents: "none",
-    }}
-  >
+  <Box className={styles.header}>
     <Content>
       <Flex justify="center" align="center">
         <Menu key="menu" />

@@ -1,0 +1,18 @@
+.wrapper {
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  display: inline-flex;
+  top: -8px;
+  left: 0;
+  right: 0;
+}
+
+.bubble {
+  background-color: var(--gray700);
+  border-radius: 99999px;
+  display: inline-block;
+  padding: var(--space100) var(--space200);
+}

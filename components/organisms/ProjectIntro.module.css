@@ -1,0 +1,11 @@
+.header {
+  margin-bottom: var(--space300);
+}
+
+.meta {
+  color: var(--gray300);
+}
+
+.title {
+  max-width: 28ch;
+}

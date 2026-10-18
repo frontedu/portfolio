@@ -1,0 +1,12 @@
+.title {
+  max-width: 28ch;
+}
+
+.projects {
+  padding-top: var(--space400);
+}
+
+.overline {
+  color: var(--gray300);
+  margin-bottom: var(--space300);
+}

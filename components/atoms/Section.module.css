@@ -1,0 +1,11 @@
+@layer atoms {
+  .section {
+    padding: var(--space500) 0;
+  }
+
+  @media (min-width: 768px) {
+    .section {
+      padding: var(--space800) 0;
+    }
+  }
+}

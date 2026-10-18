@@ -1,0 +1,54 @@
+@layer atoms {
+  .button {
+    appearance: none;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border: none;
+    vertical-align: middle;
+
+    --button-primary: var(--gray800);
+    --button-contrast: var(--gray000);
+
+    border-radius: 99999px;
+    background-color: var(--button-primary);
+    color: var(--button-contrast);
+    padding: 12px 16px;
+    font-size: 16px;
+    transition: var(--transition-default);
+    cursor: pointer;
+  }
+
+  .button::before,
+  .button::after {
+    box-sizing: border-box;
+  }
+
+  .button:hover {
+    --button-primary: var(--gray700);
+  }
+
+  .ghost {
+    background-color: transparent;
+  }
+
+  .ghost:hover {
+    --button-primary: var(--gray700);
+    background-color: var(--button-primary);
+  }
+}
+
+.icon {
+  width: 24px;
+  margin-right: var(--space100);
+}
+
+.labelWithIcon {
+  padding-right: var(--space100);
+}

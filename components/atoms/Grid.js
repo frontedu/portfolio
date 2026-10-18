@@ -1,47 +1,22 @@
-import { styled } from "stitches.config";
 import Box from "components/atoms/Box";
-import { contentStyles } from "components/atoms/Content";
-import Flex from "components/atoms/Flex";
+import cx from "components/utilities/cx";
+import styles from "./Grid.module.css";
 
-const Grid = styled(Box, {
-  padding: 0,
-  margin: 0,
-  width: "100%",
-  display: "grid",
+const gapClasses = {
+  default: styles.gapDefault,
+  large: styles.gapLarge,
+};
 
-  variants: {
-    columns: {
-      1: {
-        gridTemplateColumns: "1fr",
-      },
-      2: {
-        gridTemplateColumns: "1fr",
-
-        "@medium": {
-          gridTemplateColumns: "1fr 1fr",
-        },
-      },
-    },
-    gapSize: {
-      default: {
-        gap: "$space300",
-        "@large": {
-          gap: "$space400",
-        },
-      },
-      large: {
-        gap: "$space500",
-        "@large": {
-          gap: "$space600",
-        },
-      },
-    },
-  },
-
-  defaultVariants: {
-    columns: 1,
-    gapSize: "default",
-  },
-});
+const Grid = ({ columns = 1, gapSize = "default", className, ...props }) => (
+  <Box
+    className={cx(
+      styles.grid,
+      styles[`columns${columns}`],
+      gapClasses[gapSize],
+      className,
+    )}
+    {...props}
+  />
+);
 
 export default Grid;
